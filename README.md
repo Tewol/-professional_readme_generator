@@ -1,10 +1,8 @@
-# Professional README Generator
-
 
 ## License
 [![license](https://img.shields.io/badge/License-MIT-blueviolet)](https://shields.io)
 
-#
+
 ## Table of Contents (Optional)
 
 - [Description](#description)
@@ -15,7 +13,6 @@
 - [Questions](#questions)
 
 
-#
 ## Description
 
 This is a simple program that generates a readme file using input from the user/inquirer/
@@ -42,8 +39,6 @@ This is a simple program that generates a readme file using input from the user/
 * Clicking the links of the Table of Contents will take you to the corresponding section of the README
 
 
-
-#
 ## Mock-Up
 
 ![alt text](assets/images/screenshot.png)
@@ -60,8 +55,6 @@ Application resides in github and can be installed from there.
 - sequence of questions need to be answered for the readme file to generate appropriately 
 
 
-
-#
 ## Questions
 
 For any question please reach-out: 
