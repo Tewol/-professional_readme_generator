@@ -41,7 +41,7 @@ This is a simple program that generates a readme file using input from the user/
 
 ## Mock-Up
 
-![alt text](assets/images/screenshot.png)
+![alt text](images/demo.gif)
 
 ## Installation
 Application resides in github and can be installed from there.
@@ -64,3 +64,10 @@ For any question please reach-out:
 ## License
 
     Licensed under the MIT license. 
+
+## Links to the deployed application
+* A walkthrough video: https://www.youtube.com/watch?v=GPmlfjwDXrc
+
+* A sample README.md file: https://tewol.github.io/professional_readme_generator/
+
+* URL of the GitHub repository: https://github.com/Tewol/professional_readme_generator

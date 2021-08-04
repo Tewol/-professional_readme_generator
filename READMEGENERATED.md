@@ -1,4 +1,4 @@
-# Professional README Generator
+# Professional_Readme_Generator
   
   ## Licensing
   
@@ -11,15 +11,15 @@
   - [Tests](#tests)
   - [Questions](#questions)
 ## Description
-    This is a simple program that generates a readme file using input from the user/inquirer/
+    This is a simple program that generates a readme file using input from the user
 ## Installation
-    application resides in github and can be installed from there. 
+    npm init -y generate package and accept the default value, npm install to install all dependencies and node index.js to envoke the application
 ## Usage
-    npm init -y to generate package automatically and accept the default value then npm install to install all dependencies then finaly node index.js to envoke the applicaiton 
+    node index.js to envoke the application
 ## Tests
-    Enter approprate value for each questions 
+    User answers all questions inorder for the readme file to populate appropraitly 
 ## Questions
-    Tewol(https://github.com/Tewol)
-    hewa@gmail.com
+    tewl(https://github.com/tewl)
+    tewol@gmail.com
 ## License
     MIT
