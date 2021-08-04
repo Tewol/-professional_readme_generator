@@ -1,78 +1,69 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-
-  if (license === 'BSD'){
-    return ``
-  }else if (license === 'MIT'){
-    return ``
-  }
-
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-
-}
-
-
 function buildHeader(text){
   return `
 ## ${text}`
 }
 
-function renderTableOfContentsItem(title){
-  return `
-* [${title}](#${title.toLowerCase()})`
-}
-
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
+// Create a function that returns a license badge based on which license is passed in
 function generateMarkdown(data) {
-  let finalMarkdown = `# ${data.title}`;
+  let finalMarkdown = `# ${data.Title}
   
-  // build badge area
+  ## Licensing
   
+  [![license](https://img.shields.io/badge/License-${data.License}-blueviolet)](https://shields.io)
+  
+  ## Table of Contents 
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Questions](#questions)`;
 
   // build description header
   finalMarkdown += buildHeader("Description");
-  
   // build description content
-  `${data.Description};`
+  if( data.Description ){
+    finalMarkdown += `
+    ${data.Description}`
+  }
   
-  // build table of contents header
-  finalMarkdown += buildHeader("Table Of Contents");
-    
-  // for each item the user gave an answer for, create a TOC item
-    if( data.Description ){
-      renderTableOfContentsItem("Description")
-    }
-    if( data.Installation ){
-      renderTableOfContentsItem("Installation")
-    }
-    if( data.Usage ){
-      renderTableOfContentsItem("Usage")
-    }
-    if( data.MockUp ){
-      renderTableOfContentsItem("MockUp")
-    }
-    if( data.Repository ){
-      renderTableOfContentsItem("Repository")
-    }
-    if( data.License ){
-      renderTableOfContentsItem("License")
-    }
+  finalMarkdown += buildHeader("Installation");
+  // build installation content
+  if( data.Installation){
+    finalMarkdown += `
+    ${data.Installation}`
+  }
 
-  // build each individual section; only for the ones the user gave info for
-  if( data.Installation ){
-    finalMarkdown += `## Installation
-${data.Installation}`
+  finalMarkdown += buildHeader("Usage");
+   // build usage content
+  if( data.Usage){
+    finalMarkdown += `
+    ${data.Usage}`
+  }
+
+  finalMarkdown += buildHeader("Tests");
+   // build testing content
+  if( data.Tests){
+    finalMarkdown += `
+    ${data.Tests}`
+  }
+
+  finalMarkdown += buildHeader("Questions");
+   // build questions content
+  if( data.Username){
+    finalMarkdown += `
+    ${data.Username}(https://github.com/${data.Username})`
+  }
+  if( data.Email){
+    finalMarkdown += `
+    ${data.Email}`
+  }
+
+  finalMarkdown += buildHeader("License");
+   // build license content
+  if( data.License){
+    finalMarkdown += `
+    ${data.License}`
   }
 
   return finalMarkdown;
